@@ -18,7 +18,7 @@
 9) Запускаем: python manage.py runserver
 10) Наживаем на галочку справа сверху (PyCharm) и добавляем красные файлы. Затем коммитим.
 
-11) Создаем приложение в каталоге с manage.py, чтоб потом его легко интегрировать: python manage.py startapp mars_api
+11) Создаем приложение в каталоге с manage.py, чтоб потом его легко интегрировать: python manage.py startapp название_приложения
 12) Создаем в psql базу данных: CREATE DATABASE имя_базы, таблички в ней создаем и все такое
 13) Устанавливаем плагин psycopg2 и добавляем его в requirements.txt
 14) Летим в settings.py и в словаре DATABASES:{'default':{}} пишем:
