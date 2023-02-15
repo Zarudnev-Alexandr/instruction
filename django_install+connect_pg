@@ -50,3 +50,9 @@
 22) Добавим в models.py в модельки: def __str__(self):  return  self.choice_text. Это вернет нам полезное поле.
 23) В Shell снова вызываем Question.objects.all(). Вернется уже поле, указанное в __str__.
 24) Можно использовать фильтры: таблица.objects.filter(question_text__startswith='What') - вернет все, начинающееся с "What" или таблица.objects.filter(id=1)
+---Админка---
+25) Создаем суперпользователя для админки: python manage.py vreatesuperuser.
+26) Добавим наше приложение в админку:
+   from django.contrib import admin
+   from .models import нужный_класс
+   admin.site.register(нужный_класс)
